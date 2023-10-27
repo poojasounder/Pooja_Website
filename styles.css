@@ -703,6 +703,199 @@ Color changes in some parts of the website in dark theme
 
 /*==========================SKILLS========================*/
 
+.skills{
+    background-color: var(--container-color);
+    transition: background-color .4s;
+}
+
+.skill-main{
+    width:100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    
+}
+
+.skill-bar{
+    margin-bottom: 2.3rem;
+}
+
+.skill-main h2{
+    margin-bottom: 2rem;
+    font-size: var(--h2-font-size);
+    text-align: center;
+}
+
+.skill-left .skill-bar .info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.skill-left .skill-bar .info i{
+    font-size: 25px;
+    margin-right: 1rem;
+}
+
+.skill-left .skill-bar .bar{
+    width: 100%;
+    height: 10px;
+    background-color: var(--text-color-light);
+    border-radius: 25px;
+    margin-top: 10px;
+    position: relative;
+}
+
+.skill-bar .bar span{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    background: var(--first-color);
+    border-radius: 25px;
+    box-shadow: 0 1px 16px hsla(0,0%,0%,.12);
+
+
+}
+
+.skill-bar .bar .html{
+    width: 72%;
+    animation: html 2s;
+}
+
+.skill-bar .bar .css{
+    width: 60;
+    animation: css 3s;
+}
+
+.skill-bar .bar .javascript{
+    width: 50%;
+    animation: javascript 3s;
+}
+
+.skill-bar .bar .python{
+    width: 90%;
+    animation: python 1s;
+}
+
+.skill-bar .bar .sql{
+    width: 80%;
+    animation: sql 2s;
+}
+
+@keyframes html{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 72%;
+    }
+}
+
+@keyframes css{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 60%;
+    }
+}
+
+@keyframes javascript{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 50%;
+    }
+}
+
+@keyframes python{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+
+@keyframes sql{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 80%;
+    }
+}
+
+.professional{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.skill-right{
+    margin-left: 2rem;
+}
+
+.box{
+    position: relative;
+    margin: 10px 0;
+    flex: 1 1 15rem;
+
+}
+
+.box .text{
+    text-align: center;
+    color: var(--text-color);
+    font-size: var(--body-font);
+}
+
+.box .text big{
+    font: 400;
+    letter-spacing: 1px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+
+.box .text small{
+    display: block;
+    font-weight: var(--font-medium);
+
+}
+.circle{
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--white-color);
+}
+
+.circle .points{
+    width: 5px;
+    height: 10px;
+    background-color: var(--black-color);
+    position: absolute;
+    transform: rotate(calc(var(--i)*var(--rot))) translateY(-45px);
+}
+
+.points.marked{
+    animation: glow 0.04s linear forwards;
+    animation-delay:calc(var(--i)*0.05s) ;
+}
+@keyframes glow{
+    0%{
+        background: var(--black-color);
+        box-shadow: none;
+    }
+    100%{
+        background-color: var(--first-color);
+        box-shadow: 0 1px 16px hsla(0,0%,0%,.12);
+    }
+}
 
 /*==========================PROJECTS========================*/
 

@@ -6,7 +6,7 @@
 
             <!--===================== REMIXICONS ======================-->
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="">
-
+            <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel="stylesheet">
             <!--===================== CSS ======================-->
             <link rel="stylesheet" href="styles.css">
 
@@ -164,32 +164,96 @@
                     <h2 class="section__title-1">
                         <span>Skills</span>
                     </h2>
-                    <div class="skills__container">
-                        <div class="technical-skills">
-                            <h3 class="skills__subtitle">Technical Skills</h3>
-                            <div class="skill">
-                                <div class="skill__logo">
-                                    <img src="html-logo.png" alt="HTML Logo">
+                    <div class="skills__container container grid">
+                        <div class="skill-main">
+                            <div class="skill-left">
+                                <h2>Technical Skills</h2>
+                                <div class="skill-bar">
+                                    <div class="info">
+                                        <p><i class="ri-html5-fill" style="color:#E34F26"></i>HTML</p>
+                                        <p>72%</p>
+                                    </div>
+                                    <div class="bar">
+                                        <span class="html"></span>
+                                    </div>
                                 </div>
-                                <div class="skill__details">
-                                    <div class="skill__name">HTML</div>
-                                    <div class="skill__bar">
-                                        <div class="skill__level" style="width: 90%;"></div>
+
+                                <div class="skill-bar">
+                                    <div class="info">
+                                        <p><i class="ri-css3-fill" style="color:#1572B6"></i>CSS</p>
+                                        <p>60%</p>
+                                    </div>
+                                    <div class="bar">
+                                        <span class="css"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skill-bar">
+                                    <div class="info">
+                                        <p><i class="ri-javascript-fill" style="color:#F7DF1E"></i>JavaScript</p>
+                                        <p>50%</p>
+                                    </div>
+                                    <div class="bar">
+                                        <span class="javascript"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skill-bar">
+                                    <div class="info">
+                                        <p><i class='bx bxl-python' style="color:#306998"></i>Python</p>
+                                        <p>90%</p>
+                                    </div>
+                                    <div class="bar">
+                                        <span class="python"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skill-bar">
+                                    <div class="info">
+                                        <p><i class='bx bxl-postgresql' style="color:#336791"></i>SQL</p>
+                                        <p>80%</p>
+                                    </div>
+                                    <div class="bar">
+                                        <span class="sql"></span>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="professional-skills">
-                            <h3 class="skills__subtitle">Professional Skills</h3>
-                            <div class="skill">
-                                <div class="skill__circular">
-                                    <div class="circular-bar" data-percent="85">
-                                        <div class="circular-bar-percentage"></div>
+                            <div class="skill-right">
+                                <h2>Professional Skills</h2>
+                                <div class="professional">
+                                    <div class="box">
+                                        <div class="circle" data-dots="80" data-percent="90"></div>
+                                        <div class="text">
+                                            <big>90%</big>
+                                            <small>Team Work</small>
+                                        </div>
+                                    </div>
+
+                                    <div class="box">
+                                        <div class="circle" data-dots="80" data-percent="80"></div>
+                                        <div class="text">
+                                            <big>80%</big>
+                                            <small>Problem-Solving</small>
+                                        </div>
+                                    </div>
+
+                                    <div class="box">
+                                        <div class="circle" data-dots="80" data-percent="95"></div>
+                                        <div class="text">
+                                            <big>95%</big>
+                                            <small>Communication</small>
+                                        </div>
+                                    </div>
+
+                                    <div class="box">
+                                        <div class="circle" data-dots="80" data-percent="75"></div>
+                                        <div class="text">
+                                            <big>75%</big>
+                                            <small>Creativity</small>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="skill__name">Teamwork</div>
                             </div>
-                            
                         </div>
                     </div>
                 </section>
