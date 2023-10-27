@@ -1377,6 +1377,13 @@ Color changes in some parts of the website in dark theme
         grid-template-columns: repeat(2,350px);
         
     }
+    .home__social{
+    left: 0
+    }
+
+    .home__social-link{
+
+    }
 }
 /* For large devices */
 @media screen and (min-width: 1150px){
