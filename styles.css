@@ -844,7 +844,7 @@ Color changes in some parts of the website in dark theme
     position: relative;
     width: 220px;
     height: 250px;
-    /*background: #2a2a2a;*/
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -877,7 +877,7 @@ Color changes in some parts of the website in dark theme
 .professional .card .percent svg circle:nth-child(2){
     stroke: var(--first-color);
     stroke-dasharray: 440;
-    stroke-dashoffset: calc(440 - (440* var(--num))/ 100);
+    stroke-dashoffset: calc(440 - (440 * var(--num))/ 100);
     opacity: 0;
     animation: fadeIn 1s linear forwards;
     animation-delay: 2.5s;
@@ -1445,7 +1445,7 @@ Color changes in some parts of the website in dark theme
     .professional .card .percent svg {
         width: 150px;
         height: 150px;
-        transform: rotate(0deg);
+        transform: rotate(270deg);
     }
 
     .professional .card .percent svg circle {

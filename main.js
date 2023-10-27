@@ -145,6 +145,9 @@ sr.reveal('.home__name, .home__info, .about__container .section__title-1, .about
 
 sr.reveal('.projects__card', {interval: 100})
 
+sr.reveal('.skill-left',{origin:'right'})
+sr.reveal('.skill-right',{origin:'left'})
+
 
 const circles = document.querySelectorAll('.circle');
 circles.forEach(elem=>{
