@@ -875,7 +875,7 @@ Color changes in some parts of the website in dark theme
 }
 
 .professional .card .percent svg circle:nth-child(2){
-    stroke: var(--clr);
+    stroke: var(--first-color);
     stroke-dasharray: 440;
     stroke-dashoffset: calc(440 - (440* var(--num))/ 100);
     opacity: 0;
@@ -918,9 +918,9 @@ Color changes in some parts of the website in dark theme
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background: var(--clr);
+    background: var(--first-color);
 
-    box-shadow: 0 0 10px var(--clr),
+    box-shadow: 0 0 10px var(--first-color),
     0 0 30px var(--clr);
 
 }
@@ -942,25 +942,25 @@ Color changes in some parts of the website in dark theme
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--white-color);
+    color: var(--title-color);
     font-weight: var(--font-medium);
     font-size: 2.5rem;
 } 
 
 .number h2 span{
     font-weight: var(--font-regular);
-    color: var(--white-color);
+    color: var(--title-color);
     font-size: 0.5em;
 }
 
 .number p{
     margin-top: -40px;
     font-weight: var(--font-regular);
-    font-size: 0.75em;
+    font-size: var(--font-semi-bold);
     line-height: 20px;
     margin-left:-10px;
     text-transform: uppercase;
-    color: rgba(255,255,255,0.75);
+    color: var(--text-color-light);
     letter-spacing: 2px;
 }
 
@@ -1372,18 +1372,12 @@ Color changes in some parts of the website in dark theme
     }
 }
 
-@media screen and (min-width: 768px){
+@media screen and (max-width: 768px){
     .projects__container{
         grid-template-columns: repeat(2,350px);
         
     }
-    .home__social{
-    left: 0
-    }
-
-    .home__social-link{
-
-    }
+    
 }
 /* For large devices */
 @media screen and (min-width: 1150px){
