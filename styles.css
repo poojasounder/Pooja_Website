@@ -450,12 +450,12 @@ Color changes in some parts of the website in dark theme
 }
 
 .home__social{
-    height: max-content;
+    
     position: absolute;
     left:  -3rem;
     top: 0;
     bottom: 0;
-    margin: auto 0;
+    align-items: center;
     display: grid;
     row-gap: 1rem;
 
@@ -1571,7 +1571,6 @@ Color changes in some parts of the website in dark theme
     }
 
     .home__social-link{
-        
         font-size: 1.5rem;
         padding: 0.5rem;
 
